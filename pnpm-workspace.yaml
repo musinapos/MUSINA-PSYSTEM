@@ -1,11 +1,15 @@
+minimumReleaseAge: 1440
+minimumReleaseAgeExclude:
+    - "@workspace/*"
 packages:
+    - "."
     - "apps/*"
     - "packages/*"
+    - "packages/**/*"
     - "artifacts/*"
     - "lib/*"
-    - "lib/integrations/*"
+    - "lib/**/*"
     - "scripts"
-
 catalog:
   '@replit/vite-plugin-cartographer': ^0.5.21
   '@replit/vite-plugin-dev-banner': ^0.1.1
@@ -29,15 +33,12 @@ catalog:
   vite: ^7.3.2
   wouter: ^3.3.5
   zod: ^3.25.76
-
 autoInstallPeers: false
-
 onlyBuiltDependencies:
     - '@swc/core'
     - esbuild
     - msw
     - unrs-resolver
-
 overrides:
   "esbuild>@esbuild/darwin-arm64": "-"
   "esbuild>@esbuild/darwin-x64": "-"
