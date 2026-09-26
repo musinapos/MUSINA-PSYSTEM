@@ -2,14 +2,10 @@ minimumReleaseAge: 1440
 minimumReleaseAgeExclude:
     - "@workspace/*"
 packages:
-    - "."
-    - "apps/*"
-    - "packages/*"
-    - "packages/**/*"
-    - "artifacts/*"
-    - "lib/*"
-    - "lib/**/*"
-    - "scripts"
+    - "**/*"
+    - "!**/node_modules/**"
+    - "!**/dist/**"
+    - "!**/.git/**"
 catalog:
   '@replit/vite-plugin-cartographer': ^0.5.21
   '@replit/vite-plugin-dev-banner': ^0.1.1
