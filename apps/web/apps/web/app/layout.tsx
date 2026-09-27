@@ -1,14 +1,16 @@
-export default function Page() {
+import "./globals.css";
+
+export const metadata = {
+  title: "MUSINA POS SYSTEMS - Smart Solutions for Your Business",
+  description: "Spaza POS, Tavern POS, Restaurant POS, Customer Food App, Head Office Admin - Works Offline - Musina, Limpopo",
+};
+
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <div style={{ padding: 40, fontFamily: 'sans-serif' }}>
-      <h1 style={{ fontSize: 48, fontWeight: 900 }}>PARKER JOHNSON</h1>
-      <p style={{ fontSize: 20, marginTop: 10 }}>Official Store - LIVE ✅</p>
-      <div style={{ marginTop: 30, padding: 20, background: 'black', color: 'white', borderRadius: 12 }}>
-        Boss your shop is working boss!
-      </div>
-      <a href="/products" style={{ display: 'inline-block', marginTop: 20, color: 'blue', textDecoration: 'underline' }}>
-        Go to Products →
-      </a>
-    </div>
+    <html lang="en">
+      <body style={{margin:0, background:'#031a33', fontFamily:'Arial, sans-serif'}}>
+        {children}
+      </body>
+    </html>
   );
 }
