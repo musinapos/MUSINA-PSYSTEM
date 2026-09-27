@@ -1,0 +1,11 @@
+export default function Page() {
+  return (
+    <div style={{ padding: 40, fontFamily: 'sans-serif', textAlign: 'center' }}>
+      <h1 style={{ fontSize: 40 }}>PARKER JOHNSON</h1>
+      <p>Official Store — Shop is Live!</p>
+      <p style={{ marginTop: 20, background: 'black', color: 'white', padding: 15, display: 'inline-block' }}>
+        Coming Soon — Real Products Here
+      </p>
+    </div>
+  )
+}
