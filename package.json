@@ -1,5 +1,13 @@
-"dependencies": {
-  "next": "^14.2.5",
-  "react": "^18.3.1",
-  "react-dom": "^18.3.1"
+{
+  "name": "musina-psystem",
+  "private": true,
+  "engines": {
+    "node": "20.x",
+    "npm": "10.x"
+  },
+  "workspaces": ["apps/*"],
+  "scripts": {
+    "dev": "npm run dev --workspace=web",
+    "build": "npm run build --workspace=web"
+  }
 }
