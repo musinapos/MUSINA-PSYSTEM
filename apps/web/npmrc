@@ -1,4 +1,0 @@
-registry=https://registry.npmjs.org/
-strict-ssl=true
-legacy-peer-deps=true
-auto-install-peers=true
