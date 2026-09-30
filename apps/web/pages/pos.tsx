@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 
-const LOGO = "/file_00000000d3a88207831011440f5eb9cf.png";
+const LOGO = "/IMG-20261001-WA0691.jpg";
 
 type Product = { id:number, name:string, price:number, stock:number, image:string, category:string };
 type CartItem = { product: Product, qty:number };
