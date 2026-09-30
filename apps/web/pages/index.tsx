@@ -1,59 +1,56 @@
-export default function Home() {
+"use client"
+export default function Home(){
   return (
-    <div style={{background:'#020617', color:'white', fontFamily:'system-ui', overflowX:'hidden'}}>
-      
+    <div style={{background:'#020617', color:'white', minHeight:'100vh'}}>
       {/* HEADER */}
-      <div style={{display:'flex', justifyContent:'space-between', alignItems:'center', padding:'16px 24px', maxWidth:'1100px', margin:'0 auto'}}>
-        <div style={{fontWeight:900, fontSize:'18px'}}>MUSINA <span style={{color:'#0ea5e9'}}>▲</span> POS</div>
-        <div style={{display:'flex', gap:'10px'}}>
-          <a href="tel:+27680361133" style={{background:'#1e293b', color:'white', padding:'8px 14px', borderRadius:'20px', fontSize:'12px', textDecoration:'none'}}>📞 068 036 1133</a>
-          <a href="https://wa.me/27799073779" target="_blank" style={{background:'#25D366', color:'white', padding:'8px 14px', borderRadius:'20px', fontSize:'12px', textDecoration:'none', fontWeight:700}}>WhatsApp</a>
+      <header style={{padding:'20px', display:'flex', justifyContent:'space-between', alignItems:'center', maxWidth:'1100px', margin:'0 auto'}}>
+        <h1 style={{fontWeight:900, fontSize:'22px'}}>MUSINA DIGITAL</h1>
+        <a href="https://wa.me/27713354533" style={{background:'#25D366', padding:'10px 18px', borderRadius:'999px', color:'white', textDecoration:'none', fontWeight:700}}>WhatsApp Us</a>
+      </header>
+
+      {/* HERO WITH SMALL PICTURE + SLOGAN */}
+      <section style={{maxWidth:'1100px', margin:'0 auto', padding:'40px 20px', display:'grid', gridTemplateColumns:'1.2fr 0.8fr', gap:'30px', alignItems:'center'}}>
+        <div>
+          <p style={{color:'#38bdf8', fontWeight:700, letterSpacing:'2px', fontSize:'12px'}}>YOUR PASSION MOVES US TO YOUR SATISFACTION</p>
+          <h2 style={{fontSize:'48px', fontWeight:900, lineHeight:'1.1', margin:'15px 0'}}>The POS System That Speaks Venda & Pedi</h2>
+          <p style={{color:'#94a3b8', fontSize:'18px', lineHeight:'1.6'}}>Everything can be seen. No more paper books. Stock, sales, profit - on your phone.</p>
+          
+          <div style={{marginTop:'25px', display:'flex', gap:'12px', flexWrap:'wrap'}}>
+            <div style={{background:'#1e293b', padding:'10px 14px', borderRadius:'10px', fontSize:'13px'}}>✓ Stock Alerts</div>
+            <div style={{background:'#1e293b', padding:'10px 14px', borderRadius:'10px', fontSize:'13px'}}>✓ Works Offline</div>
+            <div style={{background:'#1e293b', padding:'10px 14px', borderRadius:'10px', fontSize:'13px'}}>✓ WhatsApp Receipts</div>
+            <div style={{background:'#1e293b', padding:'10px 14px', borderRadius:'10px', fontSize:'13px'}}>✓ Mobile View</div>
+          </div>
+
+          <div style={{marginTop:'30px', display:'flex', gap:'15px'}}>
+            <a href="/pos" style={{background:'white', color:'black', padding:'14px 26px', borderRadius:'12px', textDecoration:'none', fontWeight:800}}>Try Live Till →</a>
+            <a href="https://wa.me/27713354533?text=Hi%20I%20want%20Musina%20POS" style={{background:'#25D366', color:'white', padding:'14px 26px', borderRadius:'12px', textDecoration:'none', fontWeight:800}}>WhatsApp Demo</a>
+          </div>
         </div>
-      </div>
 
-      {/* HERO - YOUR LOVED CODE BOSS */}
-      <div style={{textAlign:'center', padding:'40px 20px 20px', background:'radial-gradient(600px at 50% -10%, #0a2447 0%, transparent 70%)'}}>
-        <div style={{background:'rgba(14,165,233,0.15)', border:'1px solid rgba(14,165,233,0.3)', color:'#0ea5e9', display:'inline-block', padding:'6px 16px', borderRadius:'20px', fontSize:'11px', letterSpacing:'1px'}}>TRUSTED BY 500+ SHOPS IN LIMPOPO</div>
-        <h1 style={{fontSize:'52px', fontWeight:900, lineHeight:1, margin:'20px 0 0', letterSpacing:'-2px'}}>MUSINA <span style={{background:'linear-gradient(90deg,#0ea5e9,#38bdf8)', WebkitBackgroundClip:'text', WebkitTextFillColor:'transparent'}}>POS</span><br/>SYSTEMS</h1>
-        <p style={{color:'#94a3b8', fontSize:'18px', marginTop:'16px'}}>The All-in-One POS for Spaza, Taverns, Restaurants & Retail</p>
-        <p style={{color:'#0ea5e9', fontWeight:700, fontSize:'13px', letterSpacing:'3px', marginTop:'8px'}}>YOUR BUSINESS OUR PRIORITY</p>
-
-        {/* BOSS ONLY THIS PICTURE ADDED BOSS - NOTHING ELSE CHANGED BOSS */}
-        <img src="/pos-devices.png" alt="POS Devices" style={{width:'100%', maxWidth:'850px', margin:'30px auto 0', display:'block', borderRadius:'24px', boxShadow:'0 20px 80px rgba(14,165,233,0.35)', border:'1px solid rgba(255,255,255,0.1)'}} />
-
-        <div style={{marginTop:'28px', display:'flex', gap:'12px', justifyContent:'center', flexWrap:'wrap'}}>
-          <a href="https://wa.me/27799073779?text=Hi%20Musina%20POS%20I%20need%20demo" target="_blank" style={{background:'linear-gradient(90deg,#0ea5e9,#0284c7)', color:'white', padding:'14px 28px', borderRadius:'12px', fontWeight:800, textDecoration:'none', boxShadow:'0 10px 30px rgba(14,165,233,0.4)'}}>🚀 GET FREE DEMO</a>
-          <a href="tel:+27680361133" style={{background:'#1e293b', border:'1px solid #334155', color:'white', padding:'14px 28px', borderRadius:'12px', fontWeight:700, textDecoration:'none'}}>📞 Call 068 036 1133</a>
+        {/* SMALL PICTURE BOSS */}
+        <div style={{background:'#0f172a', borderRadius:'20px', padding:'15px', border:'1px solid #1e293b'}}>
+          <img src="/pos-system.png" alt="Musina POS" style={{width:'100%', borderRadius:'14px', objectFit:'cover'}} />
+          <p style={{textAlign:'center', marginTop:'12px', color:'#94a3b8', fontSize:'12px'}}>POS + Phone + Printer - All Connected</p>
+          <div style={{marginTop:'10px', background:'#020617', borderRadius:'10px', padding:'10px', display:'flex', justifyContent:'space-between', alignItems:'center'}}>
+            <span style={{fontSize:'12px'}}>📱 Mobile Ready</span>
+            <span style={{fontSize:'12px', color:'#22c55e'}}>● Live</span>
+          </div>
         </div>
+      </section>
 
-        {/* YOUR LOVED GLASS CARDS BOSS - SAME SAME BOSS */}
-        <div style={{display:'grid', gridTemplateColumns:'repeat(auto-fit,minmax(150px,1fr))', gap:'12px', maxWidth:'900px', margin:'40px auto 0'}}>
-          {[
-            {i:'🛒', t:'SALES & STOCK', d:'Real-time control'},
-            {i:'📊', t:'REPORTS', d:'Daily profit & sales'},
-            {i:'📱', t:'TABLET READY', d:'Any device'},
-            {i:'🌐', t:'MULTI-LANGUAGE', d:'Venda, Tsonga'},
-            {i:'☁️', t:'CLOUD BACKUP', d:'Never lose data'},
-            {i:'🛡️', t:'SECURE', d:'PIN control'},
-          ].map(c=>(
-            <div key={c.t} style={{background:'rgba(255,255,255,0.04)', backdropFilter:'blur(10px)', border:'1px solid rgba(255,255,255,0.08)', padding:'16px 12px', borderRadius:'16px'}}>
-              <div style={{fontSize:'22px'}}>{c.i}</div>
-              <div style={{fontWeight:800, fontSize:'10px', marginTop:'8px'}}>{c.t}</div>
-              <div style={{color:'#64748b', fontSize:'9px', marginTop:'3px'}}>{c.d}</div>
-            </div>
-          ))}
-        </div>i
-      </div>
-
-      {/* FOOTER - SAME BOSS */}
-      <div style={{textAlign:'center', padding:'30px 20px', background:'linear-gradient(180deg, transparent, #0a2447)', marginTop:'20px'}}>
-        <h2 style={{fontSize:'24px', fontWeight:900}}>Ready to Grow?</h2>
-        <a href="https://wa.me/27799073779?text=Hi%20I%20want%20Musina%20POS" target="_blank" style={{background:'#25D366', color:'white', padding:'16px 32px', borderRadius:'12px', fontWeight:900, textDecoration:'none', fontSize:'16px', display:'inline-block', marginTop:'16px'}}>💬 WhatsApp 079 907 3779</a>
-        <div style={{marginTop:'16px', fontSize:'11px', color:'#475569'}}>📞 068 036 1133 • 📘 Musina POS Systems • Musina, Limpopo</div>
-      </div>
-
-      <a href="https://wa.me/27799073779" target="_blank" style={{position:'fixed', bottom:'20px', right:'20px', background:'#25D366', width:'64px', height:'64px', borderRadius:'50%', display:'flex', alignItems:'center', justifyContent:'center', fontSize:'32px', textDecoration:'none', boxShadow:'0 8px 30px rgba(37,211,102,0.6)', zIndex:9999}}>💬</a>
-      <a href="tel:+27680361133" style={{position:'fixed', bottom:'90px', right:'20px', background:'#0ea5e9', width:'56px', height:'56px', borderRadius:'50%', display:'flex', alignItems:'center', justifyContent:'center', fontSize:'22px', textDecoration:'none', boxShadow:'0 8px 20px rgba(14,165,233,0.5)', zIndex:9999}}>📞</a>
+      {/* WHAT IT CAN DO */}
+      <section style={{maxWidth:'1100px', margin:'0 auto', padding:'20px 20px 60px', display:'grid', gridTemplateColumns:'repeat(3, 1fr)', gap:'15px'}}>
+        <div style={{background:'#0f172a', padding:'20px', borderRadius:'16px', border:'1px solid #1e293b'}}>
+          <h3>🛒 Sell Fast</h3><p style={{color:'#94a3b8', fontSize:'14px', marginTop:'8px'}}>Barcode, touch, cash or card. Receipt prints + WhatsApp.</p>
+        </div>
+        <div style={{background:'#0f172a', padding:'20px', borderRadius:'16px', border:'1px solid #1e293b'}}>
+          <h3>📦 Know Stock</h3><p style={{color:'#94a3b8', fontSize:'14px', marginTop:'8px'}}>Low stock alert on phone. Know what sells in Musina.</p>
+        </div>
+        <div style={{background:'#0f172a', padding:'20px', borderRadius:'16px', border:'1px solid #1e293b'}}>
+          <h3>💰 See Profit</h3><p style={{color:'#94a3b8', fontSize:'14px', marginTop:'8px'}}>Daily sales, profit, best product - even when offline.</p>
+        </div>
+      </section>
     </div>
   )
 }
